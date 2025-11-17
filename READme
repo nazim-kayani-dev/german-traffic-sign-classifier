@@ -1,0 +1,33 @@
+READme
+This project classifies German traffic signs using two different models: a Convolutional Neural Network (CNN) and a Support Vector Machine (SVM).
+
+1. CNN Model (CNN.ipynb)
+
+Uses TensorFlow and Keras.
+Input images are resized to 30x30 RGB format.
+Labels are one-hot encoded.
+The model is trained using multiple convolutional layers followed by dense layers.
+To run the CNN model:
+Hit run all at the top of the notebook
+
+Note: TensorFlow can sometimes be unstable on certain systems, especially if GPU support isn't configured properly. If there are errors, try running it with CPU only by setting:
+
+2. SVM Model (SVM.ipynb)
+
+Uses Scikit-learn’s SVC with a linear kernel.
+Images are flattened and normalized before training.
+To run the SVM model:
+
+Hit run all at the top of the notebook
+
+3. Folder Structure Assumption:
+
+The code reads in the CSV files assuming the following structure, and prints out to a CSV located in test/. The training and test folders must exist in the directory before running, so that they can be read from and written to.
+
+train/train_metadata.csv — CSV with image paths and labels for training.
+train/ — Folder with training images.
+test/ and test/test_metadata.csv — Optional, used for generating test predictions.
+Dependencies:
+Install using pip:
+
+pip install tensorflow numpy pandas matplotlib scikit-learn
