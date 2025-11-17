@@ -24,7 +24,7 @@ This model is trained on the **German Traffic Sign Recognition Benchmark (GTSRB)
 
 **[IMPORTANT]**: The `train/` and `test/` image folders are required to run this project but are not included in this repository.
 
-You can download the dataset from the official source [**<-- INSERT LINK HERE**] or from platforms like Kaggle.
+You can download the dataset from the official source on Kaggle.
 
 ## How to Run
 
